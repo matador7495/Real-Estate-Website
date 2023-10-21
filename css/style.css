@@ -160,3 +160,29 @@ section {
   height: 100%;
   object-fit: contain;
 }
+
+header.sticky {
+  padding: 8px 15%;
+  background-color: #101821;
+}
+
+.feature {
+  padding: 60px 15% 50px;
+}
+
+.center-left h2 {
+  font-size: var(--h2-font);
+}
+
+.feature-content {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 2rem;
+  margin-top: 4rem;
+}
+
+.f-img img {
+  width: 100%;
+  height: auto;
+}
