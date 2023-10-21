@@ -252,3 +252,27 @@ header.sticky {
 .btn:hover {
   transform: translateY(-7px) scale(0.9);
 }
+
+.about {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  align-items: center;
+  gap: 4.5rem;
+}
+
+.about-img img {
+  height: auto;
+  width: 100%;
+}
+
+.about-text h2 {
+  font-size: var(--h2-font);
+  margin-bottom: 25px;
+}
+
+.about-text p {
+  font-size: var(--p-font);
+  color: var(--other-color);
+  line-height: 30px;
+  margin-bottom: 50px;
+}
