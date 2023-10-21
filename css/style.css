@@ -186,3 +186,69 @@ header.sticky {
   width: 100%;
   height: auto;
 }
+
+.property-content {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, auto));
+  gap: 2rem;
+  align-items: center;
+  margin-top: 4.5rem;
+}
+
+.row {
+  position: relative;
+  cursor: pointer;
+}
+
+.row img {
+  width: 100%;
+  height: auto;
+  margin-bottom: 20px;
+}
+
+.row h5 {
+  font-size: 26px;
+  font-weight: 600;
+  margin-bottom: 10px;
+}
+
+.row p {
+  font-size: var(--p-font);
+  color: var(--other-color);
+  margin-bottom: 20px;
+}
+
+.list {
+  display: flex;
+  align-items: center;
+  gap: 2rem;
+}
+
+.list a {
+  color: var(--text-color);
+  font-size: var(--p-font);
+}
+
+.Residence-list i {
+  font-size: 18px;
+  color: var(--main-color);
+}
+
+.center-btn {
+  text-align: center;
+  margin-top: 4rem;
+}
+
+.btn {
+  display: inline-block;
+  padding: 18px 28px;
+  background-color: var(--main-color);
+  color: var(--text-color);
+  font-size: 17px;
+  font-weight: 500;
+  transition: all 0.50s ease;
+}
+
+.btn:hover {
+  transform: translateY(-7px) scale(0.9);
+}
