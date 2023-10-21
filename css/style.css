@@ -1,0 +1,21 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  list-style: none;
+  text-decoration: none;
+  border: none;
+  outline: none;
+  scroll-behavior: smooth;
+  font-family: 'Work Sans', sans-serif;
+}
+
+:root {
+  --bg-color: #121b25;
+  --text-color: #fff;
+  --main-color: #1aa090;
+  --other-color: #d6d6d6;
+  --h1-font: 5rem;
+  --h2-font: 2.9rem;
+  --p-font: 1.1rem;
+}
