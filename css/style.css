@@ -80,6 +80,7 @@ header {
   font-weight: 500;
   margin-left: 20px;
   transition: all 0.40s ease;
+  border-radius: 5px;
 }
 
 .h-btn2:hover {
@@ -347,4 +348,186 @@ header.sticky {
 .icons a:hover {
   transform: translateY(-3px);
   color: var(--text-color);
+}
+
+/* Responsive */
+@media (max-width: 1790px) {
+  header {
+    padding: 18px 6%;
+  }
+
+  section {
+    padding: 70px 6% 60px;
+  }
+
+  header.sticky {
+    padding: 7px 6%;
+  }
+
+  .feature {
+    padding: 40px 6% 30px;
+  }
+}
+
+@media (max-width: 1425px) {
+  :root {
+    --h1-font: 4.5rem;
+    --h2-font: 2.6rem;
+    --p-font: 1rem;
+  }
+
+  .home-img {
+    width: 540px;
+    height: 540px;
+  }
+
+  .home-img img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+  }
+
+  header {
+    padding: 15px 5%;
+  }
+
+  section {
+    padding: 70px 5% 60px;
+  }
+
+  header.sticky {
+    padding: 7px 5%;
+  }
+
+  .feature {
+    padding: 40px 5% 30px;
+  }
+}
+
+@media (max-width: 1170px) {
+  #menu-icon {
+    display: block;
+  }
+
+  .navbar {
+    position: absolute;
+    top: 100%;
+    right: -100%;
+    width: 270px;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    background-color: #101821;
+    padding: 20px 15px;
+    gap: 0.5rem;
+    text-align: left;
+    transition: all 0.50s ease;
+  }
+
+  .navbar a {
+    display: block;
+    font-size: 20px;
+    padding: 15px;
+  }
+
+  .navbar.open {
+    right: 0;
+  }
+
+  :root {
+    --h1-font: 4rem;
+    --h2-font: 2rem;
+  }
+
+  .home {
+    grid-template-columns: 1fr;
+    gap: 1rem;
+    height: 120vh;
+  }
+
+  .home-text {
+    order: 2;
+    width: 100%;
+    max-width: 900px;
+  }
+
+  .home-img {
+    width: 480px;
+    height: 480px;
+    margin: 0 auto;
+    padding-top: 20px;
+  }
+
+  .about {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media (max-width: 992px) {
+  .home-img {
+    width: 720px;
+    height: auto;
+  }
+}
+
+@media (max-width: 570px) {
+  :root {
+    --h1-font: 3.4rem;
+    --h2-font: 2rem;
+    --p-font: 15px;
+  }
+
+  section {
+    padding: 70px 2% 60px;
+  }
+
+  .home {
+    gap: 15px;
+    height: 110vh;
+  }
+
+  .home-img {
+    width: 400px;
+    height: 400px;
+    padding-top: 10px;
+  }
+
+  .subscribe-content {
+    padding: 4rem 1rem;
+  }
+}
+
+@media (max-width: 420px) {
+  :root {
+    --h1-font: 2.8rem;
+    --h2-font: 1.8rem;
+  }
+
+  .h-btn1,
+  .h-btn2 {
+    font-size: 1rem;
+  }
+
+  section {
+    padding: 70px 3% 60px;
+  }
+
+  .logo img {
+    width: 90%;
+  }
+
+  .home-img {
+    width: 350px;
+    max-width: 420px;
+    height: auto;
+  }
+
+  .home-img img {
+    width: 100%;
+    height: 420px
+  }
+
+  .home-text {
+    width: 350px;
+  }
 }

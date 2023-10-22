@@ -18,6 +18,8 @@
          href="https://fonts.googleapis.com/css2?family=Work+Sans:wght@100;200;300;400;500;600;700;800;900&display=swap"
          rel="stylesheet"
       />
+      <!-- aos animation -->
+      <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
    </head>
    <body>
       <!-- header -->
@@ -41,7 +43,7 @@
       </header>
       <!-- home section -->
       <section class="home">
-         <div class="home-text">
+         <div class="home-text" data-aos="zoom-in-up">
             <h1>Your House is Waiting For You!</h1>
             <p>
                Lorem ipsum dolor sit amet consectetur adipisicing elit. Eum,
@@ -61,12 +63,12 @@
                </form>
             </div>
          </div>
-         <div class="home-img">
+         <div class="home-img" data-aos="zoom-in-up">
             <img src="img/hero.png" alt="" />
          </div>
       </section>
       <!-- feature section -->
-      <section class="feature">
+      <section class="feature" data-aos="zoom-in-up">
          <div class="center-left">
             <h2>Feature In</h2>
          </div>
@@ -89,7 +91,7 @@
          </div>
       </section>
       <!-- property section -->
-      <section class="property">
+      <section class="property" data-aos="zoom-in-up">
          <div class="center-left">
             <h2>Popular Residence</h2>
          </div>
@@ -158,10 +160,10 @@
       </section>
       <!-- about section -->
       <section class="about">
-         <div class="about-img">
+         <div class="about-img" data-aos="zoom-in-up">
             <img src="img/Group 1.png" alt="" />
          </div>
-         <div class="about-text">
+         <div class="about-text" data-aos="zoom-in-up">
             <h2>We Help People To Find Homes</h2>
             <p>
                Lorem ipsum dolor sit amet consectetur adipisicing elit. Possimus
@@ -172,7 +174,7 @@
          </div>
       </section>
       <!-- subscribe section -->
-      <section class="subscribe">
+      <section class="subscribe" data-aos="zoom-in-up">
          <div class="subscribe-content">
             <h2>Let's Simply Being With Rentiz.</h2>
             <p>
@@ -185,7 +187,7 @@
          </div>
       </section>
       <!-- contact section -->
-      <section class="contact">
+      <section class="contact" data-aos="zoom-in-up">
          <div class="contact-content">
             <img src="img/logo.png" alt="" />
             <p>
@@ -229,6 +231,13 @@
          </div>
       </section>
       <!-- custom js link -->
+      <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+      <script>
+         AOS.init({
+            offset: 300,
+            duration: 1200,
+         });
+      </script>
       <script src="js/script.js"></script>
    </body>
 </html>
